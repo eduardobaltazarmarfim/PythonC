@@ -1,6 +1,7 @@
 import math
 import random
 import datetime
+import time
 
 def retorno():
 
@@ -66,6 +67,20 @@ def verificar():
             print('-'*30)
 
             jogador=int(input('Qual é a sua jogada? '))
+
+            print('-'*30)
+
+            print('Jo')
+
+            time.sleep(1)
+
+            print('Ken')
+
+            time.sleep(1)
+
+            print('Po')
+
+            print('-'*30)
 
         except:
 
