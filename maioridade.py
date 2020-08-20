@@ -50,15 +50,18 @@ def verificar():
 
         cabecalho('Grupo de Maioridade')
 
-        x=0
         valores=list()
 
-        for i in range (0,7):
+        maior=0
 
-            x+=1
+        menor=0
 
-            ano=int(input('Digite a {}º ano de nascimento: '.format(x)))
-            valores.append(ano)
+        for i in range (1,6):
+
+            peso=int(input('Digite a {}º peso: '.format(i)))
+            valores.append(peso)
+
+        print(valores)
  
     except:
 
@@ -68,26 +71,30 @@ def verificar():
 
     else:
 
-        maior=0
-        menor=0
-        
-        dataAtual=datetime.date.today().year
+        p=0
 
-        for i in range(0,7):
+        for i in range(0,5):
+            
+            p=valores[i]
 
-            idade=0
+            if(i==0):
 
-            idade=dataAtual-valores[i]
-
-            if(idade>=18):
-
-                maior+=1
-
+                maior=p
+                menor=p
+            
             else:
 
-                menor+=1
+                if(p>maior):
 
-        print('Na lista informada temos {} pessoas maior de idade. E {} pessoas menor de idade!'.format(maior,menor))
+                    maior=p
+
+                elif(p<menor):
+
+                    menor=p
+           
+
+        print('O maior número da lista é {}'.format(maior))
+        print('O menor número da lista é {}'.format(menor))
 
         retorno()
 
