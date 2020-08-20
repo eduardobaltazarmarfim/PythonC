@@ -89,6 +89,7 @@ def verificar():
         print('No grupo temos {} mulheres abaixo de 20 anos!'.format(mulheres))
         print('O homem mais velho do grupo é o {}.'.format(novoNome.upper()))   
 
+        retorno()
 
     except:
 
