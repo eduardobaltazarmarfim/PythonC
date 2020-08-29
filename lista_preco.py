@@ -16,7 +16,7 @@ def cabecalho(titulo):
 
     print('-'*30)
 
-    print(' '*9+titulo+' '*15)
+    print(f'{titulo:^30}')
 
     print('-'*30)
 
